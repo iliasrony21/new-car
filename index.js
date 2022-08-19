@@ -104,6 +104,9 @@ run().catch(console.dir)
 app.get('/', (req, res) => {
   res.send('Running car service')
 })
+app.get('/hero', (req, res) => {
+  res.send('Welcome to heroku')
+})
 app.listen(port, () => {
   console.log('listenning to port', port)
 })
